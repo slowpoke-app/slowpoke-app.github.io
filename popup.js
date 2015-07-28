@@ -16,7 +16,7 @@ function getSelected() {
 }
 
 /*this section is using jQuery**/
-$('#body').mouseup(function() {
+$(document).mouseup(function() {
     var selection = getSelected();
 
     if (selection) {
