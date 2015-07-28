@@ -47,26 +47,7 @@
       }
     </style>
     <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.5.0/jquery.min.js"></script>
-    <script type="text/javascript">
-      $(function() {
-        var moveLeft = 20;
-        var moveDown = 10;
-        
-        $('a#trigger').click(function(e) {
-          $('div#pop-up').show();
-          //.css('top', e.pageY + moveDown)
-          //.css('left', e.pageX + moveLeft)
-          //.appendTo('body');
-        }, function() {
-          $('div#pop-up').hide();
-        });
-        
-        $('a#trigger').mousemove(function(e) {
-          $("div#pop-up").css('top', e.pageY + moveDown).css('left', e.pageX + moveLeft);
-        });
-        
-      });
-    </script>
+    <script src="/popup.js"></script>
   </head>
   <body>
     <div id="container">
